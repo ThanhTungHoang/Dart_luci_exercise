@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  // usingList();
+  usingList();
   // run1To1000PrintEvenNotGreater400();
   // print1To10000CheckNumerDivisible3And5();
   // divisibleFor3FromList();
@@ -17,6 +17,7 @@ void usingList() {
   List list5 = [4, 3, 5, 8];
   // List<int> list = new List<>(5);
   List<int> data = [3, 1, 2];
+  // List<int> data = [];
   int total = 0;
   print("Input a, b, c");
   // int a = stdin.readLineSync();
@@ -32,7 +33,8 @@ void usingList() {
   for (int i = 0; i < data.length; i++) {
     total = total + data[i];
   }
-  print(total);
+  double sum = total / data.length;
+  print("Tb cộng: $sum");
   for (int i = 0; i < data.length; i++) {
     for (int j = i + 1; j < data.length; j++) {
       if (data[i] > data[j]) {
@@ -42,7 +44,7 @@ void usingList() {
       }
     }
   }
-  print(data);
+  print("Sắp xếp: $data");
 }
 
 void run1To1000PrintEvenNotGreater400() {
