@@ -3,8 +3,8 @@ void main() {
   // CheckEvenNumberUsingSwitchCase(2);
   // print(giaiThua(8));
   // PrintNumberLess25();
-  // print1To50NotOver50();
-  printEvenInSum1To15();
+  print1To50NotOver50();
+  // printEvenInSum1To15();
 }
 
 void checkEvenNumberUsingIf(int x) {
@@ -51,17 +51,22 @@ void printNumberLess25() {
 
 void print1To50NotOver50() {
   print("run!");
+  List<int> data = [];
   int i = 1;
   int a = 0;
   while (true) {
-    print(i);
+    // print(i);
     i++;
     a = a + i;
+    data.add(a);
     if (a > 50) {
+      // print(a);
       print("break");
       break;
     }
   }
+  data.removeLast();
+  print(data);
 }
 
 void printEvenInSum1To15() {
